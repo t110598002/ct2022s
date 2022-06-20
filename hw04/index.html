@@ -15,13 +15,17 @@
 			font-family: 'WooFont'; /* 改成自己的 Simple & Medium Baseline 字型檔 */
   			font-weight: 900;
 		}
-		.poems {
-			font-family: 'cjkFonts 全瀨體'; /* Strong Baseline 字型檔 */
-		}
 		@font-face {
 			font-family: WooFont;
 			src: local("WooFont"), url(./WooFont.ttf); /* 改成自己的 Simple & Medium Baseline 字型檔 */
-			/* src: local("cjkFonts_allseto_v1.11"), url(cjkFonts_allseto_v1.11.ttf); Strong Baseline 字型檔 */
+			font-weight: bold;
+		}
+		.poems {
+			font-family: 'StrongFont', 'WooFont'; /* Strong Baseline 字型檔 */
+		}
+		@font-face {
+			font-family: StrongFont;
+			src: local("StrongFont"), url(./StrongFont.ttf); /* Strong Baseline 字型檔 */
 			font-weight: bold;
 		}
 		a:visited { color: #0000EE; }

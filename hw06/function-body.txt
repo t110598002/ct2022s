@@ -7,7 +7,7 @@ function morph(commands, unicode, defaultUPM){
         var cmdProperty = Object.keys(cmd);
         for(var j=0; j<cmdProperty.length; j++){
             if(typeof commands[i][cmdProperty[j]] == 'number'){
-                var randomInt = Math.random() * (maxNumber - minNumber) + minNumber;
+                var randomInt =  0.6 * Math.random() * (maxNumber - minNumber) + minNumber;
                 commands[i][cmdProperty[j]] += randomInt;
                 commands[i][cmdProperty[j]] = +(commands[i][cmdProperty[j]].toFixed(2))
             }
